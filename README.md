@@ -1,28 +1,20 @@
-# Tentang Kami - Halaman Informasi Responsif
+# Tentang Kami - Website Sederhana dengan Tab Interaktif
 
-Halaman web interaktif dan responsif yang menampilkan informasi tentang organisasi atau perusahaan, dibuat dengan **HTML**, **Tailwind CSS**, dan **Google Fonts**.
+Proyek ini merupakan halaman web "Tentang Kami" dengan tiga tab interaktif: **Sejarah**, **Visi**, dan **Tujuan**. Dibangun menggunakan **HTML**, **Tailwind CSS (via CDN)**, serta **Google Fonts**. Semua fitur ditulis dalam satu file HTML yang sederhana dan responsif.
 
-## ✨ Fitur
+## 🔧 Fitur
 
-- Tampilan tab: `Sejarah`, `Visi`, dan `Tujuan`
-- Desain modern dan responsif dengan Tailwind CSS (via CDN)
-- Font estetis dari Google Fonts: **Dancing Script** dan **Baloo 2**
-- Ilustrasi pendukung setiap bagian
-- Mudah disesuaikan dan digunakan ulang
+- Tab interaktif tanpa library eksternal tambahan
+- Desain responsif menggunakan Tailwind CSS
+- Font cantik dari Google Fonts: `Dancing Script` dan `Baloo 2`
+- Tidak memerlukan proses build atau framework
 
-## 🛠️ Teknologi yang Digunakan
+## 🚀 Cara Menjalankan
 
-- HTML5
-- [Tailwind CSS](https://tailwindcss.com/docs/installation/play-cdn)
-- [Google Fonts - Dancing Script & Baloo 2](https://fonts.google.com/)
-- JavaScript vanilla untuk fungsionalitas tab
-
-## 💻 Cara Menjalankan
-
-### 🔹 Langkah 1: Clone Repositori
-
-Jika kamu menggunakan Git, jalankan perintah berikut di terminal:
+1. Clone repositori ini atau download file `index.html`.
+2. Buka file `index.html` di browser kamu.
 
 ```bash
 git clone https://github.com/username/nama-repo.git
 cd nama-repo
+start index.html  # atau buka secara manual di browser
