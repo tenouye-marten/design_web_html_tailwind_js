@@ -19,7 +19,10 @@ Halaman web interaktif dan responsif yang menampilkan informasi tentang organisa
 
 ## 💻 Cara Menjalankan
 
-1. Clone repositori ini:
+### 🔹 Langkah 1: Clone Repositori
 
-   ```bash
-   git clone https://github.com/username/nama-repo.git
+Jika kamu menggunakan Git, jalankan perintah berikut di terminal:
+
+```bash
+git clone https://github.com/username/nama-repo.git
+cd nama-repo
