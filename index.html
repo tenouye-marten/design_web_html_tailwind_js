@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang Kami</title>
+
+    <!-- link tailwind css -->
+       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+   
+
+       <!-- link font -->
+     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+     <!-- link font -->
+
+     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+
+
+
+      </style>
+
+
+    
+  </head>
+
+  <body class="bg-white text-black  font-[Dancing_Script]  p-6 font-sans">
+
+
+    <div class="max-w-4xl mx-auto text-center">
+
+
+      <!-- judul -->
+      <h1 class="text-5xl  font-[Dancing_Script] mb-4">Tentang Kami</h1>
+
+
+      <!-- button -->
+      <div class="flex justify-center gap-4 mb-8">
+        <button
+          class="tab-btn  px-4 py-1 border border-gray-400 rounded-full transition-all data-[active=true]:bg-black data-[active=true]:text-white"
+          data-tab="sejarah"
+          data-active="true"
+        >
+          Sejarah
+        </button>
+
+        <button
+          class="tab-btn px-4 py-1 border border-gray-400 rounded-full transition-all data-[active=true]:bg-black data-[active=true]:text-white"
+          data-tab="visi"
+        >
+          Visi
+        </button>
+
+        <button
+          class="tab-btn px-4 py-1 border border-gray-400 rounded-full transition-all data-[active=true]:bg-black data-[active=true]:text-white"
+          data-tab="tujuan"
+        >
+          Tujuan
+        </button>
+      </div>
+
+
+      
+
+      <!-- kontent -->
+      <div class="space-y-8">
+        <!-- kontent pertamam -->
+        <div
+          id="sejarah"
+          class="tab-content flex items-start p-6 border rounded-2xl shadow-sm gap-6"
+        >
+          <img
+            src="images/one.jpg"
+            alt="Sejarah"
+            class="w-full md:w-1/2 rounded-lg"
+          />
+
+          <div class="text-left">
+            <h2 class="  font-[Dancing_Script] text-2xl font-bold font-cursive mb-2">Sejarah</h2>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Doloremque et aliquid, assumenda eos numquam rerum nemo quasi
+              facilis minus molestiae laudantium, illum quibusdam saepe fuga
+              ipsam maiores rem reiciendis fugit?
+            </p>
+          </div>
+        </div>
+        <!-- akhir kontent pertamam -->
+
+        <!-- kontent kedua -->
+        <div
+          id="visi"
+          class="tab-content hidden flex items-start p-6 border rounded-2xl shadow-sm gap-6"
+        >
+          <img
+            src="images/two.png"
+            alt="Visi"
+            class="w-full md:w-1/2 rounded-lg"
+          />
+
+          <div class="text-left">
+            <h2 class="  font-[Dancing_Script] text-2xl font-bold font-cursive mb-2">Visi</h2>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Doloremque et aliquid, assumenda eos numquam rerum nemo quasi
+              facilis minus molestiae laudantium, illum quibusdam saepe fuga
+              ipsam maiores rem reiciendis fugit?
+            </p>
+          </div>
+        </div>
+        <!-- akhir kontent kedua -->
+
+        <!-- kontent ketiga -->
+        <div
+          id="tujuan"
+          class="tab-content flex hidden items-start p-6 border rounded-2xl shadow-sm gap-6"
+        >
+          <img
+            src="images/three.jpg"
+            alt="Tujuan"
+            class="w-full md:w-1/2 rounded-lg"
+          />
+
+          <div class="text-left">
+            <h2 class="  font-[Dancing_Script] text-2xl font-bold font-cursive mb-2">Tujuan</h2>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Doloremque et aliquid, assumenda eos numquam rerum nemo quasi
+              facilis minus molestiae laudantium, illum quibusdam saepe fuga
+              ipsam maiores rem reiciendis fugit?
+            </p>
+          </div>
+        </div>
+        <!-- akhir kontent ketiga -->
+      </div>
+    </div>
+
+
+
+
+
+    <script>
+      const tombol = document.querySelectorAll(".tab-btn");
+      const kontent = document.querySelectorAll(".tab-content");
+
+      tombol.forEach((button) => {
+        button.addEventListener("click", () => {
+          tombol.forEach((btn) => (btn.dataset.active = "false"));
+          kontent.forEach((content) => content.classList.add("hidden"));
+
+          button.dataset.active = "true";
+          document.getElementById(button.dataset.tab).classList.remove("hidden");
+        });
+      });
+    </script>
+
+
+
+  </body>
+
+
+
+
+
+</html>
